@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/POC-Flutter-Funcao-OCR.iml" filepath="$PROJECT_DIR$/.idea/POC-Flutter-Funcao-OCR.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/POC_Flutter_OCR.iml" filepath="$PROJECT_DIR$/.idea/POC_Flutter_OCR.iml" />
     </modules>
   </component>
 </project>
