@@ -9,10 +9,10 @@ dependencies:
   flutter:
     sdk: flutter
 
+  firebase_core: ^1.0.1
   cupertino_icons: ^0.1.2
-  firebase_ml_vision: ^0.6.0
-  camera: ^0.4.2
-  translator: ^0.1.0+7
+  firebase_ml_vision: ^0.11.0
+  camera: ^0.8.0
 
 dev_dependencies:
   flutter_test:
