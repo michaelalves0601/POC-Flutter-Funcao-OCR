@@ -46,26 +46,26 @@ class _MyHomePageState extends State<_MyHomePage> {
 
       _isDetecting = true;
 
-     // detect(image, _getDetectionMethod(), rotation).then(
-     //   (dynamic result) {
-     //     setState(() {
-     //       _scanResults = result;
-     //     });
-//
-     //     _isDetecting = false;
-     //   },
-     // ).catchError(
-     //   (_) {
-     //     _isDetecting = false;
-      //  },
-      //);
+      detect(image, _getDetectionMethod(), rotation).then(
+        (dynamic result) {
+          setState(() {
+            _scanResults = result;
+          });
+
+          _isDetecting = false;
+        },
+      ).catchError(
+        (_) {
+          _isDetecting = false;
+        },
+      );
     });
   }
 
- // HandleDetection _getDetectionMethod() {
- //   final FirebaseVision mlVision = FirebaseVision.instance;
- //   return mlVision.labelDetector().detectInImage;
- // }
+  HandleDetection _getDetectionMethod() {
+    final FirebaseVision mlVision = FirebaseVision.instance;
+    return mlVision.labelDetector().detectInImage;
+  }
 
   Widget _buildResults() {
     const Text noResultsText = const Text('Sem resultado!');
@@ -76,8 +76,8 @@ class _MyHomePageState extends State<_MyHomePage> {
     }
 
     CustomPainter painter;
-    //if (_scanResults is! List<Label>) return noResultsText;
-   // detectLabels().then((_) {});
+    if (_scanResults is! List<Label>) return noResultsText;
+      detectLabels().then((_) {});
 
     return CustomPaint(
       painter: painter,

@@ -1,11 +1,11 @@
 buildscript {
-    repositories {
+     repositories {
         google()
         jcenter()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.1'
+        classpath 'com.android.tools.build:gradle:3.5.0'
         classpath 'com.google.gms:google-services:4.3.5'
     }
 }
@@ -28,6 +28,4 @@ subprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
-
-com.google.gms.googleservices.GoogleServicesPlugin.config.disableVersionCheck = true
 
